@@ -11,7 +11,7 @@ const CONFIG = {
   // └─┘┴ ┴└─┘┴└─┘└─┘
 
   // General
-  name: "John",
+  name: "JL",
   openInNewTab: true,
   title: "Bento",
 
@@ -20,9 +20,9 @@ const CONFIG = {
   flashSeparator: false,
   
   // Theme
-  theme: "bento",
-  imageBackground: false,
-  imageUrl: "background.jpg", // place in ./src/assets/images/ and provide the file name. Alternatively, provide a URL to an image. If the page is served over https, you may have issues loading images from insecure origins.
+  theme: "catppuccin-mocha",
+  imageBackground: true,
+  imageUrl: "bkg3_bkg5", // place in ./src/assets/images/ and provide the file name. Alternatively, provide a URL to an image. If the page is served over https, you may have issues loading images from insecure origins.
   themes: [   // List of installed themes, add your own themes in ./src/assets/css/themes and include it in the array below.
     "arc",
     "bento",
@@ -39,8 +39,8 @@ const CONFIG = {
 
   // Search Bar
   searchBar: true,
-  searchEngine: "google", // google, ddg
-  barStyle: "bento", // bento, minimal, boxy, rounded
+  searchEngine: "brave", // google, ddg, brave
+  barStyle: "minimal", // bento, minimal, boxy, rounded
   barPlaceholder: "", // if blank, use search engine name. Set to ' ' for no placeholder.
   autoFocusBar: true,
 
@@ -82,21 +82,21 @@ const CONFIG = {
   firstButtonsContainer: [
     {
       id: "1", // entry ID, don't modify.
-      name: "Github", // set the name of the card
-      icon: "fab-github", // provide a FontAwesome icon name. Regular icons (fa-) don't require a prefix, while FA-Brands icons must be prefixed with "fab-"
-      link: "https://github.com/" // provide a link to the page.
+      name: "Youtube", // set the name of the card
+      icon: "fab-youtube", // provide a FontAwesome icon name. Regular icons (fa-) don't require a prefix, while FA-Brands icons must be prefixed with "fab-"
+      link: "https://youtube.com/" // provide a link to the page.
     },
     {
       id: "2",
-      name: "Mail",
-      icon: "envelope",
-      link: "https://mail.protonmail.com/"
+      name: "Twitter",
+      icon: "fab-twitter",
+      link: "https://twitter.com/"
     },
     {
       id: "3",
-      name: "Todoist",
-      icon: "list-ol",
-      link: "https://todoist.com"
+      name: "Libreddit",
+      icon: "fab-reddit-alien",
+      link: "https://libreddit.spike.codes/"
     },
     {
       id: "4",
@@ -106,155 +106,49 @@ const CONFIG = {
     },
     {
       id: "5",
-      name: "Reddit",
-      icon: "fab-reddit",
-      link: "https://reddit.com"
+      name: "Github",
+      icon: "fab-github-alt",
+      link: "https://github.com"
     },
     {
       id: "6",
-      name: "Odysee",
-      icon: "fab-youtube",
-      link: "https://odysee.com/"
+      name: "Netflix",
+      icon: "video",
+      link: "https://netflix.com/"
     }
   ],
 
   secondButtonsContainer: [
     {
       id: "1",
-      name: "Music",
-      icon: "fab-spotify",
-      link: "https://open.spotify.com"
+      name: "Twitch",
+      icon: "fab-twitch",
+      link: "https://twitch.tv"
     },
     {
       id: "2",
-      name: "twitter",
-      icon: "fab-twitter",
-      link: "https://twitter.com/"
-    },
-    {
-      id: "3",
-      name: "bot",
-      icon: "fab-discord",
-      link: "https://discord.com/app"
-    },
-    {
-      id: "4",
       name: "Amazon",
       icon: "fab-amazon",
       link: "https://amazon.com/"
     },
     {
+      id: "3",
+      name: "Kiranico",
+      icon: "gamepad-modern",
+      link: "https://kiranico.com"
+    },
+    {
       id: "5",
-      name: "Hashnode",
-      icon: "fab-hashnode",
-      link: "https://hashnode.com/"
+      name: "ArchWiki",
+      icon: "fab-linux",
+      link: "https://wiki.archlinux.org/"
     },
     {
       id: "6",
-      name: "Figma",
-      icon: "fab-figma",
-      link: "https://figma.com/"
-    }
-  ],
-
-  // ┬  ┬┌─┐┌┬┐┌─┐
-  // │  │└─┐ │ └─┐
-  // ┴─┘┴└─┘ ┴ └─┘
-
-  // First Links Container
-  firstlistsContainer: [
-    {
-      icon: "music",
-      id: "1",
-      links: [
-        {
-          name: "Inspirational",
-          link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        },
-        {
-          name: "Classic",
-          link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        },
-        {
-          name: "Oldies",
-          link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        },
-        {
-          name: "Rock",
-          link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        }
-      ]
+      name: "r/roms Megathread",
+      icon: "joystick",
+      link: "https://r-roms.github.io/"
     },
-    {
-      icon: "coffee",
-      id: "2",
-      links: [
-        {
-          name: "Linkedin",
-          link: "https://www.linkedin.com"
-        },
-        {
-          name: "Dribbble",
-          link: "https://www.dribbble.com"
-        },
-        {
-          name: "Trello",
-          link: "https://www.trello.com"
-        },
-        {
-          name: "Slack",
-          link: "https://www.slack.com"
-        }
-      ]
-    }
-  ],
-
-  // Second Links Container
-  secondListsContainer: [
-    {
-      icon: "house-user",
-      id: "1",
-      links: [
-        {
-          name: "Spotify",
-          link: "https://www.spotify.com"
-        },
-        {
-          name: "Reddit",
-          link: "https://www.reddit.com"
-        },
-        {
-          name: "Hashnode",
-          link: "https://www.hashnode.com"
-        },
-        {
-          name: "Pocket",
-          link: "https://www.pocket.com"
-        }
-      ]
-    },
-    {
-      icon: "fab-github",
-      id: "2",
-      links: [
-        {
-          name: "Front",
-          link: "https://www.reddit.com/r/Frontend/"
-        },
-        {
-          name: "Rust",
-          link: "https://www.reddit.com/r/rust/"
-        },
-        {
-          name: "Go",
-          link: "https://www.reddit.com/r/golang/"
-        },
-        {
-          name: "Repos",
-          link: "https://github.com/migueravila"
-        }
-      ]
-    }
   ],
 
   // Set any of the below options to false to disable drawing the component on the page.
