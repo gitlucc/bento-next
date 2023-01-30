@@ -20,6 +20,10 @@ const engines = {
     url: "https://duckduckgo.com/?q=",
     display: "DuckDuckGo",
   },
+  brave: {
+    url: "https://search.brave.com/search?q=",
+    display: "Brave Search",
+   },
 };
 
 const placeholder = () => {
